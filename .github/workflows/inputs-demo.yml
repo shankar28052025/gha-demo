@@ -6,11 +6,11 @@ on:
         description: choose an environment to deploy
         required: true
         default: dev
-      options:
-        - dev
-        - test
-        - prod
-        artifact_tag: 
+        options:
+          - dev
+          - test
+          - prod
+      artifact_tag: 
          description: choose the git tag to deploy
          required: true
 jobs:
