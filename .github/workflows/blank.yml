@@ -5,5 +5,5 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: build step
-         run: echo "demo build"
+         run: echo "Hello, ${{ vars.my_name }}"
     
