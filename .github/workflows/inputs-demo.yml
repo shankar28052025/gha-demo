@@ -6,6 +6,7 @@ on:
         description: choose an environment to deploy
         required: true
         default: dev
+        type: choice
         options:
           - dev
           - test
@@ -18,4 +19,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: deploy the app
-          run: echo "deploying the ${{ inputs.artifact_tag }}application to ${{ inputs.environment}}"
+          run: echo "deploying the ${{ inputs.artifact_tag }} application to ${{ inputs.environment}}"
