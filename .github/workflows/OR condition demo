@@ -8,7 +8,7 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: run for shankar or pattu
+      - name: run for shankar or pattukutty
         if: github.actor == 'pattu' || github.actor == 'shankar28052025'
         run: echo "either shankar or pattu"
       
